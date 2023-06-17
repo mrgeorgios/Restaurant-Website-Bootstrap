@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oh Poké</title>
+<link rel="stylesheet" href="CSS/stylesheet.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+/********** Base styles **********/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Fredoka", Calibri, Tahoma, sans-serif;;
+}
+h1 {
+    color: #4F646F;
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+h2 {
+    background-color: #535657;
+    color: #F4FAFF;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 0 0 0 10px;
+}
+h3 {
+    color: #4F646F;
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    padding: 5px 10px 10px 10px;
+}
+p {
+    color: #4F646F;
+    padding-top: 45px;
+    font-size: 12px;
+}
+
+/********** Custom styles **********/
+div.plate {
+    float: left;
+}
+div.content {
+    position: relative;
+    margin: 15px;
+    background-color: #DEE7E7;
+    border : 1px solid #b8c8d0;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+div.plate-header {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+div.plate-1 h2 {
+    background-color: #8aa9b8;
+}
+div.plate-2 h2 {
+    background-color: #627882;
+}
+
+
+/********** Desktop Devices **********/
+@media (min-width: 992px) {
+    div.plate  {
+        width: 33.33%;
+    }
+}
+
+/********** Tablet Devices **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    div.plate-1,
+    div.plate-2  {
+        width: 50%;
+    }
+    div.plate-3  {
+        width: 100%;
+    }
+}
+
+/********** Mobile Devices **********/
+@media (max-width: 767px) {
+
+}
+
+</style>
+</head>
+<body>
+    <h1>Our Menu</h1>
+    <div class="plate plate-1">
+        <div class="content">
+            <div class="plate-header">
+                <h2>Oh Poké's Signature OHANA</h2>
+                <h3>119,00 kr</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua aliquam ultrice.</p>
+        </div>
+    </div>
+    <div class="plate plate-2">
+        <div class="content">
+            <div class="plate-header">
+                <h2>The Volcano Bowl</h2>
+                <h3>139,00 kr</h3>
+            </div>
+            <p>Tortor at auctor urna nunc id. Interdum posuere lorem ipsum dolor sit. Mus mauris vitae ultricies leo integer malesuada ultrices neque arc.</p>
+        </div>
+    </div>
+    <div class="plate plate-3">
+        <div class="content">
+            <div class="plate-header">
+                <h2>The Tempura Bowl</h2>
+                <h3>141,00 kr</h3>
+            </div>
+            <p> Cras ornare arcu dui vivamus arcu felis bibendum. Velit laoreet id donec ultrices tincidunt arcu non. Ullamcorper a lacus vestibulum sed.</p>
+        </div>
+    </div>
+
+</body>
+</html>
